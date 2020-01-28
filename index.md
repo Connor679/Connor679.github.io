@@ -5,7 +5,7 @@
 ### Category Name 1 
 
 [Number of Farms / Population in the Continental U.S.]
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+<img src="Projects_486/Farms.PNG?raw=true"/>
 
 ---
 [386 Demographic Work](/pdf/LAB_1_Robison.pdf)
