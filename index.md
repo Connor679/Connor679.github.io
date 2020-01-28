@@ -12,8 +12,8 @@
 <img src="Projects_486/Volcanoes.PNG?raw=true"/>
 
 ---
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Different Views of the 2008 U.S. Racial Makeup]
+<img src="Projects_486/2008.PNG?raw=true"/>
 
 ---
 
