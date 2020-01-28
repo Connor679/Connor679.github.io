@@ -2,7 +2,7 @@
 
 ---
 
-### Category Name 1 
+### GES 386 Projects 
 
 [Number of Farms / Population in the Continental U.S.]
 <img src="Projects_486/Farms.PNG?raw=true"/>
