@@ -8,8 +8,8 @@
 <img src="Projects_486/Farms.PNG?raw=true"/>
 
 ---
-[386 Demographic Work](/pdf/LAB_1_Robison.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+[Volcanoes in the U.S.](/pdf/LAB_1_Robison.pdf)
+<img src="Projects_486/Volcanoes.PNG?raw=true"/>
 
 ---
 [Project 3 Title](http://example.com/)
