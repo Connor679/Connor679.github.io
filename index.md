@@ -8,7 +8,7 @@
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
-[Project 2 Title](/pdf/sample_presentation.pdf)
+[386 Demographic Work](/pdf/LAB_1_Robison.pdf)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
