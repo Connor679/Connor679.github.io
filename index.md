@@ -4,7 +4,7 @@
 
 ### Category Name 1 
 
-[Project 1 Title](/sample_page)
+[Number of Farms / Population in the Continental U.S.]
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
 ---
