@@ -4,11 +4,11 @@
 
 ### GES 386 Projects 
 
-[Number of Farms / Population in the Continental U.S.](/pdf/)
+[Number of Farms / Population in the Continental U.S.](/Projects_486/Lab12Final)
 <img src="Projects_486/Farms.PNG?raw=true"/>
 
 ---
-[Volcanoes in the U.S.](/pdf/LAB_1_Robison.pdf)
+[Volcanoes in the U.S.](/Projects_486/LAB_1_Robison.pdf)
 <img src="Projects_486/Volcanoes.PNG?raw=true"/>
 
 ---
