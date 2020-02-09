@@ -13,7 +13,7 @@
 
 ---
 [Different Views of the 2008 U.S. Racial Makeup](/Project/Project3)
-<img src="Projects_486/2008.PNG?raw=true"/>
+<img src="images/racial.jpg?raw=true"/>
 
 ---
 
