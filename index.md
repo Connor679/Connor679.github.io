@@ -4,15 +4,15 @@
 
 ### GES 386 Projects 
 
-[Number of Farms / Population in the Continental U.S.])(projects
+[Number of Farms / Population in the Continental U.S.])(Project//Project1.md)
 <img src="Projects_486/Farms.PNG?raw=true"/>
 
 ---
-[Volcanoes in the U.S.](/Projects_486/LAB_1_Robison.pdf)
+[Volcanoes in the U.S.](/Projects_486/LAB_1_Robison.pdf)(Project//Project2.md)
 <img src="Projects_486/Volcanoes.PNG?raw=true"/>
 
 ---
-[Different Views of the 2008 U.S. Racial Makeup]
+[Different Views of the 2008 U.S. Racial Makeup](Project//Project3.md)
 <img src="Projects_486/2008.PNG?raw=true"/>
 
 ---
