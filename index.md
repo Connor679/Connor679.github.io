@@ -4,7 +4,7 @@
 
 ### GES 386 Projects 
 
-[Number of Farms / Population in the Continental U.S.]
+[Number of Farms / Population in the Continental U.S.](/pdf/)
 <img src="Projects_486/Farms.PNG?raw=true"/>
 
 ---
