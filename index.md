@@ -9,7 +9,7 @@
 
 ---
 [Volcanoes in the U.S.](/Project/Project2)
-<img src="images/mount st.jpg.PNG?raw=true"/>
+<img src="images/mount st.jpg?raw=true"/>
 
 ---
 [Different Views of the 2008 U.S. Racial Makeup](/Project/Project3)
