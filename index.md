@@ -5,7 +5,7 @@
 ### GES 386 Projects 
 
 [Number of Farms / Population in the Continental U.S.](/Project/Project1)
-<img src="Projects_486/Farms.PNG?raw=true"/>
+<img src="images/rye_field_at_sunset-by-malin_k-368004-unsplash-1400x600.jpg?raw=true"/>
 
 ---
 [Volcanoes in the U.S.](/Project/Project2)
