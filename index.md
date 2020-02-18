@@ -16,7 +16,7 @@
 <img src="images/racial.jpg?raw=true"/>
 
 [Hospitals in Baltimore County](/Project/WebMap)
-<img src="images/hospitals.jpg?raw=true"/>
+<img src="images/hospital.jpg?raw=true"/>
 
 
 ---
