@@ -16,7 +16,7 @@
 <img src="images/racial.jpg?raw=true"/>
 
 [Hospitals in Baltimore County, Maryland](/Project/WebMap)
-<img src="images/hospital.jpg?raw=true"/>
+<img src="images/hospital1.jpg?raw=true"/>
 
 
 ---
