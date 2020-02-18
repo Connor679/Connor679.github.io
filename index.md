@@ -15,7 +15,7 @@
 [Different Views of the 2008 U.S. Racial Makeup](/Project/Project3)
 <img src="images/racial.jpg?raw=true"/>
 
-[Hospitals in Baltimore County](/Project/WebMap)
+[Hospitals in Baltimore County](/Project/WebMap.md)
 
 
 ---
