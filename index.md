@@ -5,7 +5,7 @@
 ### Projects 
 
 [Unsupervised Classification in ENVI](/Project/DCLandcover)
-<img src="images/Julyture.PNG?raw=true"/>
+<img src="images/envilandcover.PNG?raw=true"/>
 
 ---
 [Hospitals in Baltimore County, Maryland WEBMAP](/qgis2web_2020_02_18-15_52_47_108948)
