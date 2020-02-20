@@ -2,8 +2,12 @@
 
 ---
 
-### GES 386 Projects 
+### Projects 
 
+[Hospitals in Baltimore County, Maryland WEBMAP](/qgis2web_2020_02_18-15_52_47_108948)
+<img src="images/hospital1.jpg?raw=true"/>
+
+---
 [Number of Farms / Population in the Continental U.S.](/Project/Project1)
 <img src="images/rye_field_at_sunset-by-malin_k-368004-unsplash-1400x600.jpg?raw=true"/>
 
@@ -14,9 +18,6 @@
 ---
 [Different Views of the 2008 U.S. Racial Makeup](/Project/Project3)
 <img src="images/racial.jpg?raw=true"/>
-
-[Hospitals in Baltimore County, Maryland WEBMAP](/qgis2web_2020_02_18-15_52_47_108948)
-<img src="images/hospital1.jpg?raw=true"/>
 
 
 ---
