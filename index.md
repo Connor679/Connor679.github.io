@@ -5,7 +5,7 @@
 ### Projects 
 
 [Coral Reef Bleaching Severity in Australia and the Florida Keys](/Project1_486/CoralBleach.md)
-<img src="images/Christ_of_the_Abyss_1.jpg?raw=true"/>
+<img src="images/Christ_of_the_Abyss_1.jpg?raw=true"/> <img src="images/Christ_of_the_Abyss_1.jpg?raw=true"/>
 
 [Unsupervised Classification in ENVI](/Project/DCLandcover)
 <img src="images/envilandcover.JPG?raw=true"/>
