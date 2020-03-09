@@ -15,6 +15,6 @@ The Florida Keys have had many changes throughout the years regarding bleaching 
 
 ## Australia
 
-<img src="../images/Great_Barrier_Reef.jpg?raw=true"/>
+<img src="../images/Great_Barrier_Reef.JPG?raw=true"/>
 
 [Bleaching in the Great Barrier Reef](https://earth.google.com/web/@-14.6915111,145.4561087,2.61182125a,0d,60y,28.18926913h,89.10632087t,0r/data=CiQSIhIgY2EwYzk0ZGNhN2I4MTFlN2I1ZDBiNzRhMWFlNGU2MDMiMAosQUYxUWlwTXRicE1IQnU1Z2lNMGJESXVlR1hrRlhSaHpMYmJ5Z3p0T0J6ejcQBQ)
