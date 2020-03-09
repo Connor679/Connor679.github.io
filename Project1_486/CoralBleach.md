@@ -6,4 +6,4 @@
 
 The Florida Keys have had many changes throughotu the years regarding bleaching throughout the reefs. Coral reef bleaching has been reported in the dataset since the 1970s. The Figure below shows the influx of bleached coral reefs over time throughout the Florida Keys.
 
-
+<img src="../images/KeyWest4.GIF?raw=true"/>
