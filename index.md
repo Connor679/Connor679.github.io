@@ -5,6 +5,7 @@
 ### Projects 
 
 [Coral Reef Bleaching Severity in Australia and the Florida Keys](/Project1_486/CoralBleach.md)
+<img src="images/envilandcover.JPG?raw=true"/>
 
 [Unsupervised Classification in ENVI](/Project/DCLandcover)
 <img src="images/envilandcover.JPG?raw=true"/>
