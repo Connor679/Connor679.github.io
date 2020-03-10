@@ -25,4 +25,4 @@ To the learn more about the effects of Bleaching in Coral Reefs click the link b
 ## Temperature
 One affect of coral Bleaching is temperature changes in the reefs. Below the global temperature differences are shown.
 
-<img src="../images/Great_Barrier_Reef.JPG?raw=true"/>
+<img src="../images/worldtemp.PNG?raw=true"/>
