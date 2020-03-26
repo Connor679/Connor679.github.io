@@ -4,7 +4,7 @@
 
 ### Projects 
 
-[The Tweeting rate of Covid19 vs Tokyo 2020](/Project/Covidtokyo.md)
+[The amount of tweets regarding COVID19 vs Tokyo 2020 Olympics](/Project/Covidtokyo.md)
 <img src="images/1582810970495.jpg?raw=true"/>
 
 ---
