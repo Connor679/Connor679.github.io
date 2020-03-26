@@ -4,6 +4,11 @@
 
 ### Projects 
 
+[The Tweeting rate of Covid19 vs Tokyo 2020](/Project/Covidtokyo.md)
+<img src="images/1582810970495.jpg?raw=true"/>
+
+---
+
 [Coral Reef Bleaching Severity in Australia and the Florida Keys](/Project1_486/CoralBleach.md)
 <img src="images/Christ_of_the_Abyss_1.jpg?raw=true"/>
 
