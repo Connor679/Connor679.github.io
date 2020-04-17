@@ -7,7 +7,6 @@
 ## Bald Eagles Nests
 
 <img src="../images/BaldEagleFinal.jpg?raw=true"/>
-
 This Figure shows that Bald Eagle Nests are spread out throughout the entire state. The area with the highest presence shown in the Heatmap to the left is near the Denver area. This area is more populated but ultimatley leads to the edge of the Rocky Mountains. This area has the highest Eagle Nest population in the country. Each Nest does have conditions associated to it. The colors reppresent whether the nest is Active, Destroyed, Inactive, Undetermined, or Unknown. These conditions are shown throughout the entire state. As you can see from the figure, most of the nests throughout the state are either Active or Unknown.
 
 ## Fish Presence
