@@ -1,8 +1,8 @@
-## Coral Reef Bleaching throughout Florida Keys and Australia
+## The Relationship Between Fish Presence and Bald Eagle Nests in Colorado
 
-**Project description:** This project consists of maps presenting the severity conditions of coral reefs throughout Australia and the Florida Keys. These areas are analyzed for the amount of coral bleaching happening in the regions. These areas will then be analyzed for differences in temperature and pollution throughout the areas to see if this could be the causes of bleaching throughout the regions
+**Project description:** This project consists of maps and R code presenting the relationship between Bald Eagle nests and Fish Presence in Colorado. In this project, maps of the fish presence and bald eagle nests were made to visually show the spread of areas throughout the state. R code was used to make 1 km buffers around the Eagle Nest file and show the intersections with fish presence throughout the state.
 
-## Florida Keys
+## Bald Eagles Nests
 
 <img src="../images/Florida_Keys_Bleach_Severity.JPG?raw=true"/>
 
@@ -13,7 +13,7 @@ The Florida Keys have had many changes throughout the years regarding bleaching 
 
 <img src="../images/Keywest4.gif?raw=true"/>
 
-## Australia
+## Fish Presence
 
 <img src="../images/Great_Barrier_Reef.JPG?raw=true"/>
 
