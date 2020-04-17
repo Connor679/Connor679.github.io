@@ -4,7 +4,7 @@
 
 ## Bald Eagles Nests
 
-<img src="../images/Florida_Keys_Bleach_Severity.JPG?raw=true"/>
+<img src="../images/BaldEagle.jpg?raw=true"/>
 
 To find out more about specific reefs throughout the Florida Keys click on the web map below:
 [Florida Keys Reef Information WEBMAP](/qgis2web_2020_03_09-18_21_00_361575)
