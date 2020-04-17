@@ -15,7 +15,7 @@ The Florida Keys have had many changes throughout the years regarding bleaching 
 
 ## Fish Presence
 
-<img src="../images/Great_Barrier_Reef.JPG?raw=true"/>
+<img src="../images/ColoradoFishFinal.jpg?raw=true"/>
 
 The major bleaching in the Great Barrier Reef is occurring close to the coast line. This exesive bleaching could be due to larger amounts of pollution closer to the shores. This topic will be further researched in the project.
 
