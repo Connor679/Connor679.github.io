@@ -7,18 +7,17 @@
 ## Bald Eagles Nests
 
 <img src="../images/BaldEagleFinal12.jpg?raw=true"/>
-This Figure shows that Bald Eagle Nests are spread out throughout the entire state. The area with the highest presence shown in the Heatmap to the left is near the Denver area. This area is more populated but ultimatley leads to the edge of the Rocky Mountains. This area has the highest Eagle Nest population in the country. Each Nest does have conditions associated to it. The colors reppresent whether the nest is Active, Destroyed, Inactive, Undetermined, or Unknown. These conditions are shown throughout the entire state. As you can see from the figure, most of the nests throughout the state are either Active or Unknown.
+
+  This Figure shows that Bald Eagle Nests are spread out throughout the entire state. The area with the highest presence shown in the Heatmap to the left is near the Denver area. This area is more populated but ultimatley leads to the edge of the Rocky Mountains. This area has the highest Eagle Nest population in the country. Each Nest does have conditions associated to it. The colors reppresent whether the nest is Active, Destroyed, Inactive, Undetermined, or Unknown. These conditions are shown throughout the entire state. As you can see from the figure, most of the nests throughout the state are either Active or Unknown.
 
 ## Fish Presence
 
 <img src="../images/ColoradoFishFinal.jpg?raw=true"/>
 
-The major bleaching in the Great Barrier Reef is occurring close to the coast line. This exesive bleaching could be due to larger amounts of pollution closer to the shores. This topic will be further researched in the project.
+  Colordo has many different species of fish within its water. In this study we studied the presence of five different species throughout the state. The Stonecat, Common Shiner, Mountain Sucker, Orange Throat Darter, and the Blue head Sucker. The Figure above shows the presence throughout the state of the different species.
+  
+  ## R Methods
+  
+  For the R portion of this project I made 1 km buffers around each Bald Eagle nest to show a range of where the Eagle would fly within the range of the nest. I then found where the bald eagle nests intersected with the buffers. These intersections would show which bald Eagles intersected with the different Species.
+  
 
-To the learn more about the effects of Bleaching in Coral Reefs click the link below:
-[Bleaching in the Great Barrier Reef](https://earth.google.com/web/@-14.6915111,145.4561087,2.61182125a,0d,60y,28.18926913h,89.10632087t,0r/data=CiQSIhIgY2EwYzk0ZGNhN2I4MTFlN2I1ZDBiNzRhMWFlNGU2MDMiMAosQUYxUWlwTXRicE1IQnU1Z2lNMGJESXVlR1hrRlhSaHpMYmJ5Z3p0T0J6ejcQBQ)
-
-## Temperature
-Two main affects of coral Bleaching are temperature changes and pollution levels in the reefs. Below the global temperature differences are shown.
-
-<img src="../images/worldtemp.PNG?raw=true"/>
