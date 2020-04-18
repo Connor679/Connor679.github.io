@@ -40,6 +40,9 @@
   ## Activity Condition of Intersecting Eagle Nests
  <img src="../images/graph.JPG?raw=true"/>
  
+ 
+ Further research into this topic will include nearest neighbor calculations to see which fish sppecies correlates best. Although we figured out which ones are better, we will discover which one is best based on nearest neighbor distance calculations. Also, a web ma will be created to see the different variables involved in the study.
+ 
   
   
   
