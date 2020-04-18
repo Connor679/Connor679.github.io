@@ -5,7 +5,7 @@
 ### Projects 
 
 [The Relationship Between Eagle Nests and Fish Presence in Colorad0](/Project2/BaldEaggle.md)
-[<img src="../images/xMDoNtN.gif?raw=true"/>](/Project2/BaldEaggle.md)
+<img src="../images/xMDoNtN.gif?raw=true"/>
 
 ---
 
