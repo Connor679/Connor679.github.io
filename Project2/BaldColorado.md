@@ -20,4 +20,10 @@
   
   For the R portion of this project I made 1 km buffers around each Bald Eagle nest to show a range of where the Eagle would fly within the range of the nest. I then found where the bald eagle nests intersected with the buffers. These intersections would show which bald Eagles intersected with the different Species.
   
+  Below are the Intersection points for all five species of fish:
+  
+  ## Bald Eagle Nest Intersection Points
+  <img src="../images/AllFish.png?raw=true"/>
+  
+  
 
