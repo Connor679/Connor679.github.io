@@ -2,7 +2,7 @@
 
 <img src="../images/baldbanner.jpg?raw=true"/>
 
-**Project description:** This project consists of maps and R code presenting the relationship between Bald Eagle nests and Fish Presence in Colorado. In this project, maps of the fish presence and bald eagle nests were made to visually show the spread of areas throughout the state. R code was used to make 1 km buffers around the Eagle Nest file and show the intersections with fish presence throughout the state.
+**Project description:** This project consists of maps and R code presenting the relationship between Bald Eagle nests and Fish Presence in Colorado. In this project, maps of the fish presence and bald eagle nests were made to visually show the spread of areas throughout the state. R code was used to make 1 km buffers around the Eagle Nest file and show the intersections with fish presence throughout the state. The data was collected from the Colorado Government GIS Website.
 
 ## Bald Eagles Nests
 
