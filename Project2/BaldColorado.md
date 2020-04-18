@@ -37,6 +37,9 @@
   
   The Intersection Points ultimately told us the condition of each Eagle Nest that Intersected. As you can see from the figure below, most of the Eagle Nests apeared to be active in the areas of fish presence. This shows that not only do Eagle nests correlate closely with Fish Presence but secifically active Eagle Nests.
   
+    <img src="../images/graph.JPG?raw=true"/>
+ 
+  
   
   
   
