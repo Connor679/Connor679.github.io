@@ -33,7 +33,7 @@
   <img src="../images/Mountainsucker.JPG?raw=true"/>
   
   ## Blueheaded Sucker Intersection Points
-  <img src="../images/Blueheadedsucker.jpg?raw=true"/>
+  <img src="../images/Blueheaded.jpg?raw=true"/>
   
   
 
