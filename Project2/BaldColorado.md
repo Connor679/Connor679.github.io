@@ -30,7 +30,7 @@
   Below are the Respective maps for each species intersections:
   
   ## Mountain Sucker Intersection Points
-  <img src="../images/MountainFishFinal.png?raw=true"/>
+  <img src="../images/MountainFishFinal.jpg?raw=true"/>
   
   ## Blueheaded Sucker Intersection Points
   <img src="../images/Blueheaded.jpg?raw=true"/>
