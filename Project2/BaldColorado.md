@@ -23,7 +23,7 @@
   Below are the Intersection points for all five species of fish:
   
   ## Bald Eagle Nest Intersection Points
-  <img src="../images/AllFish.png?raw=true"/>
+  <img src="../images/AllFish.jpg?raw=true"/>
   
   
 
