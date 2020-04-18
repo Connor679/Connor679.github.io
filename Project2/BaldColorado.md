@@ -25,5 +25,7 @@
   ## Bald Eagle Nest Intersection Points
   <img src="../images/AllFish.jpg?raw=true"/>
   
+  This shows many intersections leading to belive that as you would expect Eagle nests are closer to areas of fish presence. Two Fish showed great amounts of intersection including
+  
   
 
