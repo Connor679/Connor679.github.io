@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css">
+        <link rel="stylesheet" href="css/qgis2web.css"><link rel="stylesheet" href="css/fontawesome-all.min.css">
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="js/qgis2web_expressions.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet.rotatedMarker.js"></script>
+        <script src="js/leaflet.pattern.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/rbush.min.js"></script>
+        <script src="js/labelgun.min.js"></script>
+        <script src="js/labels.js"></script>
+        <script src="data/ColoradoCounties_1.js"></script>
+        <script src="data/BaldEagleNestPerCounty_2.js"></script>
+        <script src="data/BaldEagleNests_3.js"></script>
+        <script src="data/BlueheadSucker_4.js"></script>
+        <script src="data/CommonShiner_5.js"></script>
+        <script src="data/MountainSucker_6.js"></script>
+        <script src="data/OrangeThroatDarter_7.js"></script>
+        <script src="data/Stonecat_8.js"></script>
+        <script>
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[36.48843655190578,-109.29746365551374],[41.15114968916765,-101.4281665691113]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        var bounds_group = new L.featureGroup([]);
+        function setBounds() {
+        }
+        var layer_GoogleTerrainHybrid_0 = L.tileLayer('http://mt1.google.com/vt/lyrs=p&x={x}&y={y}&z={z}', {
+            opacity: 1.0,
+            attribution: '',
+            minZoom: 1,
+            maxZoom: 28,
+            minNativeZoom: 0,
+            maxNativeZoom: 22
+        });
+        layer_GoogleTerrainHybrid_0;
+        map.addLayer(layer_GoogleTerrainHybrid_0);
+        function pop_ColoradoCounties_1(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['OBJECTID'] !== null ? Autolinker.link(feature.properties['OBJECTID'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['COUNTYFP'] !== null ? Autolinker.link(feature.properties['COUNTYFP'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Leng'] !== null ? Autolinker.link(feature.properties['Shape_Leng'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Area'] !== null ? Autolinker.link(feature.properties['Shape_Area'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['low'] !== null ? Autolinker.link(feature.properties['low'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmod'] !== null ? Autolinker.link(feature.properties['lowmod'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LMMI'] !== null ? Autolinker.link(feature.properties['LMMI'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmoduniv'] !== null ? Autolinker.link(feature.properties['lowmoduniv'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmod_pct'] !== null ? Autolinker.link(feature.properties['lowmod_pct'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['NAMELSAD10'] !== null ? Autolinker.link(feature.properties['NAMELSAD10'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_ColoradoCounties_1_0() {
+            return {
+                pane: 'pane_ColoradoCounties_1',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(190,178,151,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_ColoradoCounties_1');
+        map.getPane('pane_ColoradoCounties_1').style.zIndex = 401;
+        map.getPane('pane_ColoradoCounties_1').style['mix-blend-mode'] = 'normal';
+        var layer_ColoradoCounties_1 = new L.geoJson(json_ColoradoCounties_1, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_ColoradoCounties_1',
+            layerName: 'layer_ColoradoCounties_1',
+            pane: 'pane_ColoradoCounties_1',
+            onEachFeature: pop_ColoradoCounties_1,
+            style: style_ColoradoCounties_1_0,
+        });
+        bounds_group.addLayer(layer_ColoradoCounties_1);
+        map.addLayer(layer_ColoradoCounties_1);
+        function pop_BaldEagleNestPerCounty_2(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>OBJECTID</strong><br />' + (feature.properties['OBJECTID'] !== null ? Autolinker.link(feature.properties['OBJECTID'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['COUNTYFP'] !== null ? Autolinker.link(feature.properties['COUNTYFP'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Leng'] !== null ? Autolinker.link(feature.properties['Shape_Leng'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['Shape_Area'] !== null ? Autolinker.link(feature.properties['Shape_Area'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['low'] !== null ? Autolinker.link(feature.properties['low'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmod'] !== null ? Autolinker.link(feature.properties['lowmod'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['LMMI'] !== null ? Autolinker.link(feature.properties['LMMI'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmoduniv'] !== null ? Autolinker.link(feature.properties['lowmoduniv'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['lowmod_pct'] !== null ? Autolinker.link(feature.properties['lowmod_pct'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['NAMELSAD10'] !== null ? Autolinker.link(feature.properties['NAMELSAD10'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>NUMPOINTS</strong><br />' + (feature.properties['NUMPOINTS'] !== null ? Autolinker.link(feature.properties['NUMPOINTS'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_BaldEagleNestPerCounty_2_0(feature) {
+            if (feature.properties['NUMPOINTS'] >= 0.000000 && feature.properties['NUMPOINTS'] <= 3.000000 ) {
+                return {
+                pane: 'pane_BaldEagleNestPerCounty_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(44,123,182,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 3.000000 && feature.properties['NUMPOINTS'] <= 13.000000 ) {
+                return {
+                pane: 'pane_BaldEagleNestPerCounty_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(171,217,233,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 13.000000 && feature.properties['NUMPOINTS'] <= 27.000000 ) {
+                return {
+                pane: 'pane_BaldEagleNestPerCounty_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,191,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 27.000000 && feature.properties['NUMPOINTS'] <= 35.000000 ) {
+                return {
+                pane: 'pane_BaldEagleNestPerCounty_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(253,174,97,1.0)',
+                interactive: true,
+            }
+            }
+            if (feature.properties['NUMPOINTS'] >= 35.000000 && feature.properties['NUMPOINTS'] <= 87.000000 ) {
+                return {
+                pane: 'pane_BaldEagleNestPerCounty_2',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(215,25,28,1.0)',
+                interactive: true,
+            }
+            }
+        }
+        map.createPane('pane_BaldEagleNestPerCounty_2');
+        map.getPane('pane_BaldEagleNestPerCounty_2').style.zIndex = 402;
+        map.getPane('pane_BaldEagleNestPerCounty_2').style['mix-blend-mode'] = 'normal';
+        var layer_BaldEagleNestPerCounty_2 = new L.geoJson(json_BaldEagleNestPerCounty_2, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_BaldEagleNestPerCounty_2',
+            layerName: 'layer_BaldEagleNestPerCounty_2',
+            pane: 'pane_BaldEagleNestPerCounty_2',
+            onEachFeature: pop_BaldEagleNestPerCounty_2,
+            style: style_BaldEagleNestPerCounty_2_0,
+        });
+        bounds_group.addLayer(layer_BaldEagleNestPerCounty_2);
+        map.addLayer(layer_BaldEagleNestPerCounty_2);
+        function pop_BaldEagleNests_3(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['ACTIVITYCO'] !== null ? Autolinker.link(feature.properties['ACTIVITYCO'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2"><strong>STATUS</strong><br />' + (feature.properties['STATUS'] !== null ? Autolinker.link(feature.properties['STATUS'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_BaldEagleNests_3_0(feature) {
+            switch(String(feature.properties['STATUS'])) {
+                case 'ACTIVE':
+                    return {
+                pane: 'pane_BaldEagleNests_3',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(26,150,65,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'DESTROYED':
+                    return {
+                pane: 'pane_BaldEagleNests_3',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(166,217,106,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'INACTIVE':
+                    return {
+                pane: 'pane_BaldEagleNests_3',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(255,255,192,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'UNDETERMINED':
+                    return {
+                pane: 'pane_BaldEagleNests_3',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(253,174,97,1.0)',
+                interactive: true,
+            }
+                    break;
+                case 'UNKNOWN':
+                    return {
+                pane: 'pane_BaldEagleNests_3',
+                radius: 4.0,
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1,
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(215,25,28,1.0)',
+                interactive: true,
+            }
+                    break;
+            }
+        }
+        map.createPane('pane_BaldEagleNests_3');
+        map.getPane('pane_BaldEagleNests_3').style.zIndex = 403;
+        map.getPane('pane_BaldEagleNests_3').style['mix-blend-mode'] = 'normal';
+        var layer_BaldEagleNests_3 = new L.geoJson(json_BaldEagleNests_3, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_BaldEagleNests_3',
+            layerName: 'layer_BaldEagleNests_3',
+            pane: 'pane_BaldEagleNests_3',
+            onEachFeature: pop_BaldEagleNests_3,
+            pointToLayer: function (feature, latlng) {
+                var context = {
+                    feature: feature,
+                    variables: {}
+                };
+                return L.circleMarker(latlng, style_BaldEagleNests_3_0(feature));
+            },
+        });
+        bounds_group.addLayer(layer_BaldEagleNests_3);
+        map.addLayer(layer_BaldEagleNests_3);
+        function pop_BlueheadSucker_4(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RasterFiel'] !== null ? Autolinker.link(feature.properties['RasterFiel'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_BlueheadSucker_4_0() {
+            return {
+                pane: 'pane_BlueheadSucker_4',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(145,82,45,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_BlueheadSucker_4');
+        map.getPane('pane_BlueheadSucker_4').style.zIndex = 404;
+        map.getPane('pane_BlueheadSucker_4').style['mix-blend-mode'] = 'normal';
+        var layer_BlueheadSucker_4 = new L.geoJson(json_BlueheadSucker_4, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_BlueheadSucker_4',
+            layerName: 'layer_BlueheadSucker_4',
+            pane: 'pane_BlueheadSucker_4',
+            onEachFeature: pop_BlueheadSucker_4,
+            style: style_BlueheadSucker_4_0,
+        });
+        bounds_group.addLayer(layer_BlueheadSucker_4);
+        map.addLayer(layer_BlueheadSucker_4);
+        function pop_CommonShiner_5(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RasterFiel'] !== null ? Autolinker.link(feature.properties['RasterFiel'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_CommonShiner_5_0() {
+            return {
+                pane: 'pane_CommonShiner_5',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(190,178,151,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_CommonShiner_5');
+        map.getPane('pane_CommonShiner_5').style.zIndex = 405;
+        map.getPane('pane_CommonShiner_5').style['mix-blend-mode'] = 'normal';
+        var layer_CommonShiner_5 = new L.geoJson(json_CommonShiner_5, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_CommonShiner_5',
+            layerName: 'layer_CommonShiner_5',
+            pane: 'pane_CommonShiner_5',
+            onEachFeature: pop_CommonShiner_5,
+            style: style_CommonShiner_5_0,
+        });
+        bounds_group.addLayer(layer_CommonShiner_5);
+        map.addLayer(layer_CommonShiner_5);
+        function pop_MountainSucker_6(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RasterFiel'] !== null ? Autolinker.link(feature.properties['RasterFiel'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_MountainSucker_6_0() {
+            return {
+                pane: 'pane_MountainSucker_6',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(196,60,57,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_MountainSucker_6');
+        map.getPane('pane_MountainSucker_6').style.zIndex = 406;
+        map.getPane('pane_MountainSucker_6').style['mix-blend-mode'] = 'normal';
+        var layer_MountainSucker_6 = new L.geoJson(json_MountainSucker_6, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_MountainSucker_6',
+            layerName: 'layer_MountainSucker_6',
+            pane: 'pane_MountainSucker_6',
+            onEachFeature: pop_MountainSucker_6,
+            style: style_MountainSucker_6_0,
+        });
+        bounds_group.addLayer(layer_MountainSucker_6);
+        map.addLayer(layer_MountainSucker_6);
+        function pop_OrangeThroatDarter_7(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>INPUT_DATE</strong><br />' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RasterFiel'] !== null ? Autolinker.link(feature.properties['RasterFiel'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_OrangeThroatDarter_7_0() {
+            return {
+                pane: 'pane_OrangeThroatDarter_7',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(229,182,54,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_OrangeThroatDarter_7');
+        map.getPane('pane_OrangeThroatDarter_7').style.zIndex = 407;
+        map.getPane('pane_OrangeThroatDarter_7').style['mix-blend-mode'] = 'normal';
+        var layer_OrangeThroatDarter_7 = new L.geoJson(json_OrangeThroatDarter_7, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_OrangeThroatDarter_7',
+            layerName: 'layer_OrangeThroatDarter_7',
+            pane: 'pane_OrangeThroatDarter_7',
+            onEachFeature: pop_OrangeThroatDarter_7,
+            style: style_OrangeThroatDarter_7_0,
+        });
+        bounds_group.addLayer(layer_OrangeThroatDarter_7);
+        map.addLayer(layer_OrangeThroatDarter_7);
+        function pop_Stonecat_8(feature, layer) {
+            var popupContent = '<table>\
+                    <tr>\
+                        <td colspan="2"><strong>INPUT_DATE</strong><br />' + (feature.properties['INPUT_DATE'] !== null ? Autolinker.link(feature.properties['INPUT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['EDIT_DATE'] !== null ? Autolinker.link(feature.properties['EDIT_DATE'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                    <tr>\
+                        <td colspan="2">' + (feature.properties['RasterFiel'] !== null ? Autolinker.link(feature.properties['RasterFiel'].toLocaleString(), {truncate: {length: 30, location: 'smart'}}) : '') + '</td>\
+                    </tr>\
+                </table>';
+            layer.bindPopup(popupContent, {maxHeight: 400});
+        }
+
+        function style_Stonecat_8_0() {
+            return {
+                pane: 'pane_Stonecat_8',
+                opacity: 1,
+                color: 'rgba(35,35,35,1.0)',
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                weight: 1.0, 
+                fill: true,
+                fillOpacity: 1,
+                fillColor: 'rgba(225,89,137,1.0)',
+                interactive: true,
+            }
+        }
+        map.createPane('pane_Stonecat_8');
+        map.getPane('pane_Stonecat_8').style.zIndex = 408;
+        map.getPane('pane_Stonecat_8').style['mix-blend-mode'] = 'normal';
+        var layer_Stonecat_8 = new L.geoJson(json_Stonecat_8, {
+            attribution: '',
+            interactive: true,
+            dataVar: 'json_Stonecat_8',
+            layerName: 'layer_Stonecat_8',
+            pane: 'pane_Stonecat_8',
+            onEachFeature: pop_Stonecat_8,
+            style: style_Stonecat_8_0,
+        });
+        bounds_group.addLayer(layer_Stonecat_8);
+        map.addLayer(layer_Stonecat_8);
+        var baseMaps = {};
+        L.control.layers(baseMaps,{'<img src="legend/Stonecat_8.png" /> Stonecat': layer_Stonecat_8,'<img src="legend/OrangeThroatDarter_7.png" /> Orange Throat Darter': layer_OrangeThroatDarter_7,'<img src="legend/MountainSucker_6.png" /> Mountain Sucker': layer_MountainSucker_6,'<img src="legend/CommonShiner_5.png" /> Common Shiner': layer_CommonShiner_5,'<img src="legend/BlueheadSucker_4.png" /> Bluehead Sucker': layer_BlueheadSucker_4,'Bald Eagle Nests<br /><table><tr><td style="text-align: center;"><img src="legend/BaldEagleNests_3_ACTIVE0.png" /></td><td>ACTIVE</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNests_3_DESTROYED1.png" /></td><td>DESTROYED</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNests_3_INACTIVE2.png" /></td><td>INACTIVE</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNests_3_UNDETERMINED3.png" /></td><td>UNDETERMINED</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNests_3_UNKNOWN4.png" /></td><td>UNKNOWN</td></tr></table>': layer_BaldEagleNests_3,'Bald Eagle Nest Per County<br /><table><tr><td style="text-align: center;"><img src="legend/BaldEagleNestPerCounty_2_00300.png" /></td><td>0.0 - 3.0</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNestPerCounty_2_301301.png" /></td><td>3.0 - 13.0</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNestPerCounty_2_1302702.png" /></td><td>13.0 - 27.0</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNestPerCounty_2_2703503.png" /></td><td>27.0 - 35.0</td></tr><tr><td style="text-align: center;"><img src="legend/BaldEagleNestPerCounty_2_3508704.png" /></td><td>35.0 - 87.0</td></tr></table>': layer_BaldEagleNestPerCounty_2,'<img src="legend/ColoradoCounties_1.png" /> Colorado Counties': layer_ColoradoCounties_1,"Google Terrain Hybrid": layer_GoogleTerrainHybrid_0,},{collapsed:false}).addTo(map);
+        setBounds();
+        </script>
+    </body>
+</html>
