@@ -40,11 +40,17 @@
 ###### Activity Condition of Intersecting Eagle Nests
  <img src="../images/graph.JPG?raw=true"/>
  
- 
- ###### Bald Eagle Fish Species Web Map
+###### Bald Eagle Fish Species Web Map
  
   The web mapp shows the different aspepcts of the Bald Eagle nests and Fish Presence. Also involves a choropleth map showing the abundance of bald eagle nests per county.
   [Bald Eagle Fish presence WEBMAP](/qgis2web_2020_04_23-13_02_30_659492)
+  
+  ##### Nearest Neighbor Calulations
+  
+  Nearest Neighbor Calculations were done on the different fish species to find which fish species was most correlated to the Bald Eagle nests. Each Fish polygon was converted to an sf object and the nearest neighbor calculation was conducted to show the distance form the eagle nests to the areas of fish. The averages were then calculated to find the fish that spaptially correlated most with the Bald Eagle nests. 
+  
+  The fish species that most correlated with Bald Eagle nests was the Stone Cat species. This makes sense due to the fact that although it is a small area they were closely related to the area of high eagle population.
+  <img src="../images/graph.JPG?raw=true"/>
   
   
 
