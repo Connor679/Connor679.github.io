@@ -22,29 +22,31 @@
   
   Below are the Intersection points for all five species of fish:
   
-Bald Eagle Nest Intersection Points
+  ###### Bald Eagle Nest Intersection Points
   <img src="../images/AllFish.jpg?raw=true"/>
   
   This shows many intersections leading to belive that as you would expect Eagle nests are closer to areas of fish presence. Two Fish showed great amounts of intersection including the Mountain Sucker and the Blueheaded Sucker.
   
   Below are the Respective maps for each species intersections:
   
-Mountain Sucker Intersection Points
+###### Mountain Sucker Intersection Points
   <img src="../images/MountainFishFinal.jpg?raw=true"/>
   
-Blueheaded Sucker Intersection Points
+###### Blueheaded Sucker Intersection Points
   <img src="../images/Blueheaded.jpg?raw=true"/>
   
   The Intersection Points ultimately told us the condition of each Eagle Nest that Intersected. As you can see from the figure below, most of the Eagle Nests apeared to be active in the areas of fish presence. This shows that not only do Eagle nests correlate closely with Fish Presence but secifically active Eagle Nests.
   
-Activity Condition of Intersecting Eagle Nests
+###### Activity Condition of Intersecting Eagle Nests
  <img src="../images/graph.JPG?raw=true"/>
  
  
- ## Bald Eagle Fish Species Web Map
+ ###### Bald Eagle Fish Species Web Map
  
   The web mapp shows the different aspepcts of the Bald Eagle nests and Fish Presence. Also involves a choropleth map showing the abundance of bald eagle nests per county.
   [Bald Eagle Fish presence WEBMAP](/qgis2web_2020_04_23-13_02_30_659492)
+  
+  
 
   
   
